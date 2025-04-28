@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demo-csv-linter"
+version = "0.0.1"
+description = "demo python CLI tool to lint csv files"
+authors = [ { name = "Jacob MacInnis" } ]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "click",
+    "pandas"
+]
+
+[project.urls]
+Homepage = "https://github.com/JacobMacInnis/python-cli"
+
+[project.scripts]
+csv-linter = "csv_linter.main:main"
