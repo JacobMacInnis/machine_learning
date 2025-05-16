@@ -1,0 +1,5 @@
+install
+torch
+transformers
+scikit-learn
+sentencepiece
